@@ -1,0 +1,19 @@
+{
+  "name": "node-express-langgraph-examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:generate-article": "node generate-article/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/google-genai": "^0.2.16",
+    "@langchain/langgraph": "^0.4.3",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
+  }
+}
