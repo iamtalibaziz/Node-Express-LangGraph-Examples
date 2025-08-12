@@ -1,8 +1,14 @@
-# Generate Article API
+# Node-Express-LangGraph-Examples
 
-This project is a Node.js Express-based API that generates articles on a given topic using LangGraph and Google's Gemini 1.5 Pro model.
+This repository contains examples of Node.js-based APIs built with Express and LangGraph.
 
-## How it works
+## Projects
+
+### 1. Generate Article
+
+This project is a Node.js-based API that generates articles on a given topic.
+
+**How it works**
 
 The API exposes a single endpoint, `/generate-article`, which accepts a POST request with a JSON body containing a "question" field. This "question" is the topic for the article you want to generate.
 
@@ -15,26 +21,22 @@ The backend uses a LangGraph graph to orchestrate the article generation process
 
 Each step is implemented as a node in the graph and utilizes a powerful language model (Google's Gemini 1.5 Pro) to perform its task.
 
-## Setup
+**How to run**
 
-1.  Install dependencies:
+1.  Install the dependencies:
     ```bash
     npm install
     ```
-2.  Create a `.env` file in the root of the project and add your Gemini API key:
+2.  Create a `.env` file and add your Gemini API key:
     ```
-    GEMINI_API_KEY="your_gemini_api_key"
+    GEMINI_API_KEY="YOUR_API_KEY"
     ```
-3.  Start the server:
+3.  Run the Express server:
     ```bash
     npm run start:generate-article
     ```
-
-## Usage
-
-Send a POST request to `http://localhost:3000/generate-article` with a JSON body like this:
-
-```json
-{
-  "question": "What are the benefits of learning a new language?"
-}
+4.  Send a POST request to `http://127.0.0.1:3000/generate-article` with a JSON body like this:
+    ```json
+    {
+      "question": "What are the benefits of using Express?"
+    }
